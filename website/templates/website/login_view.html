@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for student in object_list %}
+        <li>
+            <a href="{% url 'student' student.enrollment_number %}">
+                {{ student.enrollment_number }}
+            </a>
+            <small style="color:grey;">(click here to see whole details)</small> - {{ student.name }}
+            <small style="color:grey;">Branch: {{ student.branch }}</small>
+        </li>
+        <hr>
+    {% endfor %}
+    </ul>
+{% endblock %}

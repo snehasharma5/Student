@@ -1,0 +1,11 @@
+dj-database-url
+Django
+django-heroku
+gunicorn
+Pillow
+psycopg2
+python-decouple
+pytz
+sqlparse
+whitenoise
+djangorestframework
